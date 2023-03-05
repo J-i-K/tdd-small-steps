@@ -32,7 +32,7 @@ function createApp(database) {
 
   function parseDate2 ( input ) { if ( input ) { return Temporal.PlainDate.from(input) } }
 
-  function calculateCost(age, type, date2, baseCost) {
+  function calculateCost(age, type, date2, baseCost, date) {
     if (type === "night") {
       return calculateCostForNightTicket(age, baseCost);
     } else {
