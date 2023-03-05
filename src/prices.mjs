@@ -28,7 +28,6 @@ function createApp(database) {
     if (dateString) {
       // console.log(new Date(dateString))
       console.log(dateString)
-      console.log(Temporal.PlainDate.from(dateString))
       return new Date(dateString);
     }
   }
