@@ -31,6 +31,7 @@ function createApp(database) {
       return new Date(dateString);
     }
   }
+
   
 
   function calculateCost(age, type, date, baseCost) {
