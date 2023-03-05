@@ -23,12 +23,6 @@ function createApp(database) {
     res.json({ cost });
   });
 
-  function parseDate3(dateString) {
-    if (dateString) {
-      return new Date(dateString);
-    }
-  }
-
   function parseDate ( input ) { if ( input ) { return Temporal.PlainDate.from(input) } }
 
   function calculateCost(age, type, date, baseCost) {
