@@ -27,7 +27,7 @@ function createApp(database) {
   function parseDate(dateString) {
     if (dateString) {
       // console.log(new Date(dateString))
-      // console.log(Temporal.PlainDate.from(dateString))
+      console.log(Temporal.PlainDate.from(dateString))
       return new Date(dateString);
     }
   }
