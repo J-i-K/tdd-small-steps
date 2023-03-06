@@ -27,7 +27,7 @@ function createApp(database) {
 
   function parseDate(dateString) {
     if (dateString) {
-      dateToTemporalPlainDate(new Date(dateString).getFullYear())
+      dateToTemporalPlainDate(new Date(dateString))
       return new Date(dateString);
     }
   }
