@@ -23,7 +23,7 @@ function createApp(database) {
     res.json({ cost });
   });
 
-  
+  function dateToTemporalPlainDate ( date ) { return Temporal.PlainDate.from(date)}
 
   function parseDate(dateString) {
     if (dateString) {
