@@ -90,7 +90,7 @@ function createApp(database) {
         dateToTemporalPlainDate( date ) &&
         dateToTemporalPlainDate( date ).year === dateToTemporalPlainDate(holiday).year &&
         dateToTemporalPlainDate( date ).month === dateToTemporalPlainDate(holiday).month &&
-        dateToTemporalPlainDate( date ).day === holiday.getDate()
+        dateToTemporalPlainDate( date ).day === dateToTemporalPlainDate(holiday).day
       ) {
         return true;
       }
